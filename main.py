@@ -1,6 +1,3 @@
-### shout out to the reference: https://youtu.be/olY_2MW4Eik?feature=shared
-### first time building python functions using api
-
 from flask import Flask, redirect, jsonify, request, session
 from datetime import datetime
 
@@ -35,7 +32,7 @@ CSV_PATH = f'{FILE_PATH}/csv'
 
 @app.route('/')
 def index():
-    return "Welcome to Spotify playlist extractor, plz login first! <a href='/login'>login in with spotify</a>"
+    return "Welcome to Spotify playlist extractor, plz login first! <a href='/login'>login with spotify</a>"
 
 
 @app.route('/login')
