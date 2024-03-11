@@ -56,6 +56,8 @@ Make sure you have python installed with packages below:
 
 You could use `pip install 'package name'` to install them.
 
+I personally use `conda install 'package name'`.
+
 ## How to
 ### Step 1
 After the Setup Steps, head to the directory and run `main.py` with:
@@ -88,7 +90,7 @@ Click the `login with spotify` link, which would redirect to spotify login page.
 Check the user information which would be read by the program, agree with your own risks!
 
 ### Step 4
-Wait for a few seconds to probably few minute until the browser pops up with `all done!` message.
+Wait for a few seconds to probably few minutes until the browser pops up with `all done!` message.
 
 The process time depends on the size of your playlists.
 
@@ -111,7 +113,7 @@ AND I FOUND OUT THE PRICING AFTER I FINISHED THE CODING PART OF SPOTIFY API. LUL
 
 That's why......
 
-Huh......
+Huh......Orzzzz
 
 ## Reference
 - [Spotify for Development - Web API](https://developer.spotify.com/documentation/web-api)
