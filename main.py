@@ -134,9 +134,9 @@ def get_nextplaylists(next_playlists, playlist_items):
 def playlist_info_extract(lists, playlist_items):
     for item in playlist_items:
         playlist_info = {
-            'id': item['id'],
             'name': item['name'],
             'tracks_number': item['tracks']['total'],
+            'id': item['id'],
             'type': item['type']
         }
         lists.append(playlist_info)
@@ -200,14 +200,14 @@ def get_next_favortie_songs(next_songs_uri, favorite_tracks):
 def song_info_extract(lists, tracks_items):
     for song_info in tracks_items:
         track_dict = {
-            'album_type': song_info['track']['album']['album_type'],
-            'album_name': song_info['track']['album']['name'],
-            'artists_name': song_info['track']['artists'][0]['name'],
-            'artists_type': song_info['track']['artists'][0]['type'],
-            'disc_number': song_info['track']['disc_number'],
-            'durations_ms': song_info['track']['duration_ms'],
-            'track_name': song_info['track']['name'],
-            'track_number': song_info['track']['track_number'],
+            'Track Name': song_info['track']['name'],
+            'Artists Name': song_info['track']['artists'][0]['name'],
+            'Artists Type': song_info['track']['artists'][0]['type'],
+            'Album Name': song_info['track']['album']['name'],
+            'Album Type': song_info['track']['album']['album_type'],
+            'Disc Number': song_info['track']['disc_number'],
+            'Track Number': song_info['track']['track_number'],
+            'Durations_ms': song_info['track']['duration_ms'],
             'uri': song_info['track']['uri']
         }
         lists.append(track_dict)
